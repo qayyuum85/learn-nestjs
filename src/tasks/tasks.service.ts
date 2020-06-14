@@ -54,6 +54,7 @@ export class TasksService {
     const task: Task = await this.getTaskById(id, user);
 
     task.status = status;
-    return await task.save();
+    await task.save();
+    return task;
   }
 }
