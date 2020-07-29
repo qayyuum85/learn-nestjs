@@ -5,7 +5,6 @@ import { TaskRepository } from './task.repository';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './task.entity';
 import { TaskStatus } from './task.status.enum';
-import { DeleteResult } from 'typeorm';
 import { User } from '../auth/user.entity';
 
 @Injectable()
